@@ -1,5 +1,7 @@
 # Playbook por categoria de tarefa
 
+Em pesquisa, código, UI e automação, verifique também a linguagem do resultado. Se houver prosa PT-BR, carregue a [especialização Humanizer](../writing/humanizer.md) e delimite os trechos editáveis.
+
 | Tarefa | Campos que normalmente importam | Validação do resultado |
 |---|---|---|
 | Pergunta/resposta | pergunta, contexto de referência, limite de escopo, formato | veracidade e suporte no contexto/fonte |

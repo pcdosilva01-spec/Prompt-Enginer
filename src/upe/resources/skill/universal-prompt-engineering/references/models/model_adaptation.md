@@ -1,5 +1,7 @@
 # Adaptação por modelo
 
+Para IDs, ciclo de vida, modalidades, limites, preços e fontes, consulte a [ficha da superfície](catalog.md). As remissões aos volumes abaixo explicam a origem histórica das recomendações.
+
 Aplique a [seleção dinâmica de modelo e esforço](model_selection.md) antes do resumo. Use este módulo para adaptar o texto ao destino aprovado.
 
 ## Regra de decisão

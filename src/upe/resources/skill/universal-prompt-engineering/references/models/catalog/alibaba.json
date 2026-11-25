@@ -1,0 +1,96 @@
+{
+  "publisher": "Alibaba Cloud",
+  "surface": "Alibaba Model Studio",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Escopo, região e modo de implantação afetam recursos e custos. Compatibilidade de protocolo não dá acesso a plugins.",
+  "sources": {
+    "max": {
+      "title": "Qwen4-Max",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max",
+      "edition": null,
+      "claim": "Capacidades por região, contexto, saídas, cache e preço."
+    },
+    "flash": {
+      "title": "Qwen3.8-Flash",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-flash",
+      "edition": "2026-11-20",
+      "claim": "Limites, cache e diferenças regionais de web search."
+    },
+    "release": {
+      "title": "Model releases and updates",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "edition": "entradas de 2026-10 e 2026-11",
+      "claim": "Datas por implantação; o rollout regional pode diferir."
+    },
+    "price": {
+      "title": "Model pricing",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+      "edition": null,
+      "claim": "Preços por snapshot e tamanho de entrada no escopo indicado."
+    }
+  },
+  "models": [
+    {
+      "id": "qwen4-max",
+      "name": "Qwen4-Max",
+      "status": "listed",
+      "released": "2026-11-16",
+      "modalities": "texto/imagem/vídeo → texto",
+      "context": 1000000,
+      "output": 131072,
+      "reasoning": "Thinking opcional; saída máxima nesse modo 262144.",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "USD/1M entrada/saída: Singapura International 1.50/4.50. Cache explícito ou implícito cobrado à parte.",
+      "guide": "Separe documentos e consulta. Passe tools pela API e valide JSON Schema no cliente.",
+      "sources": [
+        "max",
+        "release"
+      ]
+    },
+    {
+      "id": "qwen3.8-flash",
+      "name": "Qwen3.8-Flash",
+      "status": "listed",
+      "released": "2026-10-27",
+      "modalities": "texto/imagem/vídeo → texto",
+      "context": 1000000,
+      "output": 131072,
+      "reasoning": "Com/sem thinking.",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Frankfurt EU: USD/1M entrada/leitura implícita/saída 0.15/0.016/0.47. Global difere.",
+      "guide": "Considere para extração visual; confirme web search na região.",
+      "notes": "Data refere-se à disponibilização em HK/UE. Busca web ausente nessas implantações.",
+      "sources": [
+        "flash",
+        "release"
+      ]
+    },
+    {
+      "id": "qwen3.7-plus-2026-05-26",
+      "name": "Qwen3.7-Plus (snapshot)",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": "Frankfurt Global USD/1M entrada/saída: 0.276/1.101 até 256k de entrada; 0.826/3.301 acima, até 1M.",
+      "guide": "Para regressão em cliente existente, fixe o snapshot e a região.",
+      "sources": [
+        "price"
+      ]
+    }
+  ]
+}

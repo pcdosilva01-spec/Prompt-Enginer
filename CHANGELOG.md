@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0a5 — 2026-11-25 — local candidate
+
+- Reject complete known Humanizer clauses on explicitly inactive routes; keep ordinary inactive review reference-free.
+- Apply documented unsupported effort values only on their exact current API surface; no change to approval/rubric contracts.
+- Refine portable Humanizer for multi-turn repair, preserve upstream attribution and add regressions.
+
+## 0.1.0a4 — 2026-11-25 — local candidate
+
+- Preserves the unreleased a3 working tree, including its modular provider catalog and Humanizer integration.
+- Repairs stale manifest; extends recipient editorial instructions with contextual conversational continuity and a common fallback across access modes.
+- Documents bounded skill routing and rejects duplicated or conflicting complete editorial blocks; preserves all approval and delivery checks.
+- No publication or host activation; see the accompanying comparative report.
+
 ## 0.1.0a3 — 2026-11-24 — local candidate
 
 - Added revision-bound summary, construction, review and delivery checks with model recommendations and a conversational fallback.

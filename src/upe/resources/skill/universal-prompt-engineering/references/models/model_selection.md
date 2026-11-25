@@ -1,5 +1,9 @@
 # Seleção dinâmica de modelo e esforço
 
+Consulte somente a [ficha do destino](catalog.md). Para oferta anunciada ou retirada use alternativa condicional. Para preview, depreciação e acesso restrito, identifique o impedimento. Baseie a alternativa nas mesmas modalidades, ferramentas e limites. Verifique o custo da tarefa inteira antes de afirmar economia.
+
+O helper aceita `brief.needs` com `context` (total necessário incluindo saída), `output` (reserva de saída), `features` (por exemplo `tools`, `image-input`, `schema`) e `budget_usd`. Um teto em USD requer `estimated_usd` por candidato para a tarefa inteira, com premissas nas evidências. O filtro compara as exigências com a ficha da superfície exata. Uma lacuna impede confirmação sob o requisito correspondente. Valores de esforço explicitamente rejeitados em uma ficha vigente eliminam aquela configuração da seleção automática; uma escolha explícita incompatível fica marcada indisponível, sem troca silenciosa de esforço. Não extrapole entre API, Codex e ChatGPT. Sem teto numérico, o host ainda avalia prazo, suficiência e orçamento. Cota baixa prioriza economia entre candidatos suficientes. Evidência de acesso e viabilidade fornecida pelo host vence após 14 dias. Revalide antes se mudar conta, versão, uso ou plano.
+
 Aplique em toda entrega definitiva. Selecione antes de numerar o resumo e mostre a recomendação aprovada novamente nas configurações finais. Reabra a aprovação ao mudar materialmente o destino. Use [adaptação por modelo](model_adaptation.md) para ajustar o texto à superfície aprovada.
 
 1. **Registre a demanda.** Tarefa, complexidade, contexto (volume, tipos de entrada, privacidade), ferramentas/modalidades/schema necessários, plataforma e superfície exatas, prazo/qualidade desejados, modelo/versão e esforço escolhidos, plano, orçamento e cota conhecida. Marque desconhecidos sem perguntar quando a recomendação pode ser condicional.

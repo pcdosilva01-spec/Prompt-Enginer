@@ -1,0 +1,89 @@
+{
+  "publisher": "Cohere",
+  "surface": "Cohere API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Chat, Embed e Rerank são endpoints distintos. Tarifas de hospedagem e plano pendentes.",
+  "sources": {
+    "list": {
+      "title": "Models",
+      "url": "https://docs.cohere.com/docs/models",
+      "edition": null,
+      "claim": "IDs, endpoints, modalidades, janelas e status de versões."
+    }
+  },
+  "models": [
+    {
+      "id": "command-a-plus-05-2026",
+      "name": "Command A+",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto/imagem → texto",
+      "context": 128000,
+      "output": 64000,
+      "reasoning": null,
+      "features": [
+        "image-input",
+        "tools"
+      ],
+      "pricing": null,
+      "guide": "Use Chat para tarefas sobre tabelas e imagens com saída textual.",
+      "notes": "MoE multimodal com raciocínio.",
+      "sources": [
+        "list"
+      ]
+    },
+    {
+      "id": "command-a-03-2025",
+      "name": "Command A",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto → texto",
+      "context": 256000,
+      "output": 8000,
+      "reasoning": null,
+      "features": [
+        "tools"
+      ],
+      "pricing": null,
+      "guide": "Forneça trechos recuperados e exija referência ao trecho para cada alegação.",
+      "sources": [
+        "list"
+      ]
+    },
+    {
+      "id": "rerank-v5.0-pro",
+      "name": "Rerank 5 Pro",
+      "status": "listed",
+      "released": null,
+      "modalities": "consulta e documentos → relevância",
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Ordene documentos recuperados antes de gerar a resposta em outro endpoint.",
+      "sources": [
+        "list"
+      ]
+    },
+    {
+      "id": "embed-v4.0",
+      "name": "Embed v4",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto/imagem → vetor",
+      "context": 128000,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "image-input"
+      ],
+      "pricing": null,
+      "guide": "Fixe dimensões e métrica do índice antes de trocar o encoder.",
+      "sources": [
+        "list"
+      ]
+    }
+  ]
+}

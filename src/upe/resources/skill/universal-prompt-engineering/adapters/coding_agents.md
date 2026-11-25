@@ -1,5 +1,7 @@
 # Adaptador para coding agents
 
+Verifique o ambiente onde o prompt será executado. Uma skill pessoal no editor pode estar ausente no agente remoto ou contêiner. [Integração Humanizer por capacidade](../references/writing/humanizer.md).
+
 ## Cursor
 
 Docs oficiais atuais reconhecem `.agents/skills/`, `.cursor/skills/`, locais de usuário e carregamento compatível de `.claude/skills/` e `.codex/skills/`. Skill local não é necessariamente sincronizada para Cloud Agent/SSH. Fonte: [Cursor Skills](https://cursor.com/docs/skills), verificada em 23/11/2026.

@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = ["SKILL.md", "README.md", "INSTALLATION.md", "agents/openai.yaml", "references/KNOWLEDGE_INDEX.md", "references/COMPATIBILITY_MATRIX.md", "references/original_dossier/ORIGINALS_SHA256.json", "scripts/approval_gate.py", "scripts/package_skill.py", "tests/test_approval_gate.py", "tests/behavioral_eval_protocol.md"]
 REQUIRED += [
+    "scripts/editorial.py", "scripts/model_catalog.py", "references/writing/humanizer.md",
+    "references/writing/HUMANIZER-LICENSE.txt", "workflows/skill_routing.md",
     "scripts/interaction.py", "scripts/delivery_contract.py", "scripts/model_selection.py",
     "workflows/interaction_integration.md", "references/models/model_selection.md",
     "tests/test_interaction.py",

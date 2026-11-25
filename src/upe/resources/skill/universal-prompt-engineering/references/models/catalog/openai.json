@@ -1,0 +1,274 @@
+{
+  "publisher": "OpenAI",
+  "surface": "OpenAI API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Endpoints e tarifas de API. Créditos, plano e seletor do Codex exigem verificação própria.",
+  "sources": {
+    "release": {
+      "title": "API changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "edition": "entradas até 2026-11-24",
+      "claim": "Lançamentos, endpoints e condições das ferramentas."
+    },
+    "catalog": {
+      "title": "All models",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "edition": null,
+      "claim": "Estado das versões antigas da API."
+    },
+    "migration": {
+      "title": "Using GPT-6.2",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model",
+      "edition": "GPT-6.2",
+      "claim": "Esforço e parâmetros aceitos na migração."
+    },
+    "flare": {
+      "title": "GPT-Image-2.6 Flare",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2.6-flare",
+      "edition": "2.6",
+      "claim": "Modalidades e preço por tipo de token."
+    },
+    "astra": {
+      "title": "GPT-6.2 Astra",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+      "edition": "gpt-6.2-astra",
+      "claim": "Janela, saída, modalidades, cache, recursos e preços Standard."
+    },
+    "sol": {
+      "title": "GPT-6.2 Sol",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+      "edition": "gpt-6.2-sol",
+      "claim": "Janela, saída, modalidades, cache, recursos e preços Standard."
+    },
+    "terra": {
+      "title": "GPT-6.1 Terra",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "edition": "gpt-6.1-terra",
+      "claim": "Janela, saída, modalidades, cache, recursos e preços Standard."
+    },
+    "codex": {
+      "title": "GPT-5.3-Codex",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "edition": "5.3",
+      "claim": "Janela, preço e capacidade da API histórica."
+    },
+    "gpt-6-luna": {
+      "title": "GPT-6 Luna",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "edition": "gpt-6-luna",
+      "claim": "Janela, máximo de saída e preços de texto Standard."
+    },
+    "gpt-6.1-sol": {
+      "title": "GPT-6.1 Sol",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "edition": "gpt-6.1-sol",
+      "claim": "Janela, máximo de saída e preços de texto Standard."
+    }
+  },
+  "models": [
+    {
+      "id": "gpt-6.2-astra",
+      "name": "GPT-6.2 Astra",
+      "status": "listed",
+      "released": "2026-11-17",
+      "modalities": "texto/imagem → texto",
+      "context": 1050000,
+      "output": 128000,
+      "reasoning": "Responses: reasoning.effort; Chat Completions: reasoning_effort; iniciar em medium, none rejeitado.",
+      "unsupported_efforts": ["none"],
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "USD/1M tokens Standard até 272k de entrada, entrada/leitura cache/gravação 30min/saída: 8/0.40/10/40. Acima do limiar: entrada/cache ×2, saída ×1,5 sobre a requisição inteira.",
+      "guide": "Divida uma migração em resultados verificáveis; aumente esforço se houver ganho no caso de teste.",
+      "notes": "Tools somente em Responses. Corte de conhecimento 18/05/2026. Entrada máxima 922k.",
+      "sources": [
+        "astra",
+        "release",
+        "migration"
+      ]
+    },
+    {
+      "id": "gpt-6.2-sol",
+      "name": "GPT-6.2 Sol",
+      "status": "listed",
+      "released": "2026-11-17",
+      "modalities": "texto/imagem → texto",
+      "context": 1050000,
+      "output": 128000,
+      "reasoning": "Responses: reasoning.effort; Chat Completions: reasoning_effort; iniciar em medium, none rejeitado.",
+      "unsupported_efforts": ["none"],
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "USD/1M tokens Standard até 272k de entrada, entrada/leitura cache/gravação 30min/saída: 2/0.10/2.50/10. Acima do limiar: entrada/cache ×2, saída ×1,5 sobre a requisição inteira.",
+      "guide": "Especifique artefato e testes para edição cotidiana.",
+      "notes": "Tools somente em Responses. Corte de conhecimento 01/06/2026. Entrada máxima 922k.",
+      "sources": [
+        "sol",
+        "release",
+        "migration"
+      ]
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "name": "GPT-6.1 Terra",
+      "status": "listed",
+      "released": "2026-10-26",
+      "modalities": "texto/imagem → texto",
+      "context": 1050000,
+      "output": 128000,
+      "reasoning": "none, low, medium (padrão), high, xhigh, max",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "USD/1M tokens Standard até 272k de entrada, entrada/leitura cache/gravação 30min/saída: 1/0.05/1.25/5. Acima do limiar: entrada/cache ×2, saída ×1,5 sobre a requisição inteira.",
+      "guide": "Forneça a imagem ou o texto original para revisão.",
+      "notes": "Tools somente em Responses. Corte de conhecimento 01/06/2026.",
+      "sources": [
+        "terra",
+        "release"
+      ]
+    },
+    {
+      "id": "gpt-image-2.6-flare",
+      "name": "GPT-Image-2.6 Flare",
+      "status": "listed",
+      "released": "2026-11-04",
+      "modalities": "texto/imagem → imagem",
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "image-input"
+      ],
+      "pricing": "USD/1M tokens: entrada texto 5, texto em cache 1.25, saída imagem 30. Cobrança de imagem de entrada separada.",
+      "guide": "Para editar uma imagem, indique região e elementos a preservar.",
+      "sources": [
+        "release",
+        "flare"
+      ]
+    },
+    {
+      "id": "gpt-live-1.1",
+      "name": "GPT-Live 1.1",
+      "status": "listed",
+      "released": "2026-11-19",
+      "modalities": "voz conversacional",
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Para diálogo por voz, especifique idioma e política de interrupção da sessão.",
+      "notes": "Live API, v1/live/sessions.",
+      "sources": [
+        "release"
+      ]
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "name": "GPT-5.3-Codex",
+      "status": "deprecated",
+      "released": null,
+      "modalities": null,
+      "context": 400000,
+      "output": 128000,
+      "reasoning": null,
+      "features": [],
+      "pricing": "USD/1M entrada/cache/saída 1.75/0.175/14.",
+      "guide": "Compatibilidade com integração existente. Revalide migração com a mesma suíte.",
+      "sources": [
+        "catalog",
+        "codex"
+      ]
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "name": "GPT-5.2-Codex",
+      "status": "retired",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Reconheça referências históricas e proponha migração para aprovação.",
+      "sources": [
+        "catalog"
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "status": "listed",
+      "released": "2026-09-22",
+      "modalities": "texto/imagem → texto",
+      "context": 1050000,
+      "output": 128000,
+      "reasoning": "none, low, medium, high, xhigh, max; padrão medium.",
+      "features": [
+        "tools",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard USD/1M entrada/leitura cache/saída (contexto curto): 0.10/0.01/0.50.",
+      "guide": "Fixe critérios verificáveis; comece pelo menor esforço suficiente.",
+      "notes": "Chat Completions só chama funções com esforço none.",
+      "sources": [
+        "gpt-6-luna",
+        "release"
+      ]
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "status": "listed",
+      "released": "2026-09-29",
+      "modalities": "texto/imagem → texto",
+      "context": 1050000,
+      "output": 128000,
+      "reasoning": "low, medium, high, xhigh, max; padrão medium.",
+      "features": [
+        "tools",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard USD/1M entrada/leitura cache/saída (contexto curto): 2/0.10/10.",
+      "guide": "Fixe critérios verificáveis; comece pelo menor esforço suficiente.",
+      "notes": "Revisar tarifas especiais acima de 272k.",
+      "sources": [
+        "gpt-6.1-sol",
+        "release"
+      ]
+    },
+    {
+      "id": "gpt-6-rosalind",
+      "name": "GPT-6 Rosalind",
+      "status": "restricted",
+      "released": "2026-10-30",
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Verificar a habilitação institucional antes de propor a superfície para pesquisa científica.",
+      "notes": "Programa Rosalind Research para organizações aprovadas.",
+      "sources": [
+        "release"
+      ]
+    }
+  ]
+}

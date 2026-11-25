@@ -1,0 +1,155 @@
+{
+  "publisher": "Anthropic",
+  "surface": "Claude API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Claude.ai, Claude Code, parceiros cloud e API têm condições próprias. Arquitetura interna não verificada.",
+  "sources": {
+    "overview": {
+      "title": "Models overview",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "edition": null,
+      "claim": "ID, modalidades, janelas, ferramentas, conhecimento e padrão de esforço."
+    },
+    "price": {
+      "title": "Pricing",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "edition": null,
+      "claim": "Tarifas e TTL de cache; faixa curta do Haiku."
+    },
+    "effort": {
+      "title": "Effort",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/effort",
+      "edition": null,
+      "claim": "Ajustes por modelo; orçamento inclui raciocínio."
+    },
+    "launch": {
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "edition": "2026-11-09; edição 11/11",
+      "claim": "Lançamento público de Fable e acesso restrito a Mythos."
+    },
+    "changes": {
+      "title": "Claude Platform release notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "edition": "até 2026-11-25",
+      "claim": "Datas de lançamento, migrações e aposentadoria agendada."
+    }
+  },
+  "models": [
+    {
+      "id": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "status": "listed",
+      "released": "2026-11-09",
+      "modalities": "texto/imagem → texto",
+      "context": 1000000,
+      "output": 128000,
+      "reasoning": "Adaptive sempre ativo; esforço padrão high.",
+      "features": [
+        "tools",
+        "image-input",
+        "cache"
+      ],
+      "pricing": "USD/1M tokens entrada/saída: 8/40.",
+      "guide": "Escalar apenas se o ensaio de trabalho longo justificar.",
+      "notes": "Corte documental de conhecimento jun/2026. Conferir ID próprio em Bedrock.",
+      "sources": [
+        "overview",
+        "price",
+        "effort",
+        "launch"
+      ]
+    },
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "status": "listed",
+      "released": "2026-09-22",
+      "modalities": "texto/imagem → texto",
+      "context": 1000000,
+      "output": 128000,
+      "reasoning": "Adaptive sempre ativo; esforço padrão medium.",
+      "features": [
+        "tools",
+        "image-input",
+        "cache"
+      ],
+      "pricing": "USD/1M tokens entrada/saída: 4/20; cache gravação 5min/1h/leitura: 5/8/0.20.",
+      "guide": "Tarefas com ferramentas: explicitar critérios de parada.",
+      "notes": "Corte documental de conhecimento jun/2026. Conferir ID próprio em Bedrock.",
+      "sources": [
+        "overview",
+        "price",
+        "effort",
+        "changes"
+      ]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "status": "listed",
+      "released": "2026-09-28",
+      "modalities": "texto/imagem → texto",
+      "context": 1000000,
+      "output": 128000,
+      "reasoning": "Adaptive; esforço padrão high.",
+      "features": [
+        "tools",
+        "image-input",
+        "cache"
+      ],
+      "pricing": "USD/1M tokens entrada/saída: 2/10; cache gravação 5min/1h/leitura: 2.50/4/0.10.",
+      "guide": "Teste medium para tarefas agentivas bem delimitadas.",
+      "notes": "Corte documental de conhecimento jun/2026. Conferir ID próprio em Bedrock.",
+      "sources": [
+        "overview",
+        "price",
+        "effort",
+        "changes"
+      ]
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "status": "listed",
+      "released": "2026-10-07",
+      "modalities": "texto/imagem → texto",
+      "context": 1000000,
+      "output": 128000,
+      "reasoning": "Adaptive; esforço padrão medium.",
+      "features": [
+        "tools",
+        "image-input",
+        "cache"
+      ],
+      "pricing": "USD/1M tokens entrada/saída: 0.10/0.50 (até 100k de entrada); cache gravação 5min/1h/leitura: 0.125/0.20/0.01.",
+      "guide": "Classificação ou extração em volume: amostrar casos raros.",
+      "notes": "Corte documental de conhecimento jun/2026. Conferir ID próprio em Bedrock.",
+      "sources": [
+        "overview",
+        "price",
+        "effort",
+        "changes"
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-5-20250929",
+      "name": "Claude Sonnet 4.5",
+      "status": "deprecated",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Se explicitamente escolhido, informar data de encerramento antes da aprovação.",
+      "valid_through": "2026-11-29",
+      "notes": "Retirada da Claude API agendada para 30/11/2026. Reconfirmar no dia.",
+      "sources": [
+        "changes"
+      ]
+    }
+  ]
+}

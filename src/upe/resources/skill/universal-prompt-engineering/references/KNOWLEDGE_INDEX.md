@@ -1,5 +1,7 @@
 # Índice da skill
 
+Atualizações de 25/11/2026: [catálogo e ledger por superfície](models/catalog.md), [regra obrigatória e blocos Humanizer](writing/humanizer.md) e [casos Discord, mistos e negativos](../examples/ptbr_delivery.md). O snapshot abaixo conserva as datas dos módulos históricos. O dossiê não é catálogo operacional.
+
 Data do snapshot: **23/11/2026**. Abra somente módulos relevantes; o dossiê integral está em `original_dossier/`.
 
 | Assunto | Arquivo | Modelo/família | Plataforma | Categoria/técnicas | Versão/data | Fontes/confiança | Origem |
@@ -19,3 +21,5 @@ Data do snapshot: **23/11/2026**. Abra somente módulos relevantes; o dossiê in
 
 **Busca simples:** procure título/termo nos Markdown do pacote. Se o claim é volátil, verifique documentação primária de novo; os registros aqui são snapshot e não promessa de atualização automática.
 
+
+Composição de skills: [roteamento editorial](../workflows/skill_routing.md), [Humanizer](writing/humanizer.md); carregar somente se houver prosa PT-BR no resultado destinatário.

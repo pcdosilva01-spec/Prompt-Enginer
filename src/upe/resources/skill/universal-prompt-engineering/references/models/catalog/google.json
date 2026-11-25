@@ -1,0 +1,181 @@
+{
+  "publisher": "Google",
+  "surface": "Gemini API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Recursos de AI Studio, Antigravity e Vertex dependem do produto, região e conta. Limites e capacidades referem-se à API indicada.",
+  "sources": {
+    "list": {
+      "title": "Models",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "edition": null,
+      "claim": "Estado de versões e previews."
+    },
+    "release": {
+      "title": "Changelog",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "edition": "novembro de 2026",
+      "claim": "GA e superfícies dos lançamentos."
+    },
+    "carbon": {
+      "title": "Gemini 4 carbon",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon",
+      "edition": "gemini-4-carbon",
+      "claim": "Limites unificados, modalidades, preços, ferramentas e níveis de thinking."
+    },
+    "argon": {
+      "title": "Gemini 4 argon",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      "edition": "gemini-4-argon",
+      "claim": "Limites unificados, modalidades, preços, ferramentas e níveis de thinking."
+    },
+    "neon": {
+      "title": "Gemini 4 neon",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-neon",
+      "edition": "gemini-4-neon",
+      "claim": "Limites unificados, modalidades, preços, ferramentas e níveis de thinking."
+    },
+    "hydrogen": {
+      "title": "Gemini 4 hydrogen",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-4-hydrogen",
+      "edition": "gemini-4-hydrogen",
+      "claim": "Limites unificados, modalidades, preços, ferramentas e níveis de thinking."
+    },
+    "flash": {
+      "title": "Gemini 3.8 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "edition": "3.8",
+      "claim": "Limites de entrada e saída, preços de lançamento e versão estável."
+    }
+  },
+  "models": [
+    {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "status": "stable",
+      "released": "2026-11-10",
+      "modalities": "texto/imagem/vídeo/áudio/PDF → texto",
+      "context": 1048576,
+      "output": 65536,
+      "reasoning": "low, medium, high",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard pago USD/1M entrada/cache/saída com thinking: 2/0.10/10 até 30/11; 4/0.20/20 a partir de 01/12.",
+      "guide": "Defina testes para raciocínio complexo.",
+      "valid_through": "2026-11-30",
+      "notes": "Saída síncrona padrão. Long decode até 1.048.576 dentro da janela unificada. Cache somente implícito.",
+      "sources": [
+        "carbon",
+        "release"
+      ]
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "status": "stable",
+      "released": "2026-10-13",
+      "modalities": "texto/imagem/vídeo/áudio/PDF → texto",
+      "context": 1048576,
+      "output": 65536,
+      "reasoning": "low, medium, high",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard pago USD/1M entrada/cache/saída com thinking: 2/0.10/10 até 30/11; 4/0.20/20 a partir de 01/12.",
+      "guide": "Experimente menor esforço em programação repetida.",
+      "valid_through": "2026-11-30",
+      "notes": "Saída síncrona padrão. Long decode até 1.048.576 dentro da janela unificada. Cache somente implícito.",
+      "sources": [
+        "argon",
+        "release"
+      ]
+    },
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "status": "stable",
+      "released": "2026-11-18",
+      "modalities": "texto/imagem/vídeo/áudio/PDF → texto",
+      "context": 1048576,
+      "output": 65536,
+      "reasoning": "low, medium, high, xhigh",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard pago USD/1M entrada/cache/saída com thinking: 3/0.15/15.",
+      "guide": "Especifique aceitação para tarefas multimodais.",
+      "notes": "Saída síncrona padrão. Long decode até 1.048.576 dentro da janela unificada. Cache somente implícito. API paga.",
+      "sources": [
+        "neon",
+        "release"
+      ]
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "status": "stable",
+      "released": "2026-11-12",
+      "modalities": "texto/imagem/vídeo/áudio/PDF → texto",
+      "context": 1048576,
+      "output": 65536,
+      "reasoning": "low, medium, high, xhigh",
+      "features": [
+        "tools",
+        "schema",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "Standard pago USD/1M entrada/cache/saída com thinking: 1.50/0.075/7.50.",
+      "guide": "Para rotinas diárias, limite a saída e valide o custo por tarefa.",
+      "notes": "Saída síncrona padrão. Long decode até 1.048.576 dentro da janela unificada. Cache somente implícito. API com tiers gratuito e pago.",
+      "sources": [
+        "hydrogen",
+        "release"
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "status": "stable",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": 65536,
+      "reasoning": null,
+      "features": [],
+      "pricing": "Standard USD/1M entrada/cache/saída 0.75/0.075/3.75 até 31/12; armazenamento separado.",
+      "guide": "Extrair conteúdo de documentos com amostra de validação.",
+      "notes": "Limite de entrada 1.048.576; verificar soma efetiva no endpoint.",
+      "valid_through": "2026-12-31",
+      "sources": [
+        "flash"
+      ]
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "status": "preview",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Fixar ID e testar a substituição antes de migrar.",
+      "sources": [
+        "list"
+      ]
+    }
+  ]
+}

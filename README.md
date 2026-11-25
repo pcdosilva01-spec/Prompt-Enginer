@@ -2,7 +2,7 @@
 
 Evidence-aware prompt engineering knowledge and a portable Agent Skill, with an optional local installer and integrity checker.
 
-**Status:** `0.1.0a3` is the current source candidate. Host installation and model behavior require separate verification. Read [release readiness](docs/audits/RELEASE_READINESS.md) and [licensing status](LICENSING.md) before redistributing.
+**Status:** `0.1.0a5` is a local candidate with a standalone skill ZIP and source ZIP. Host installation and model behavior require separate verification. Read [release readiness](docs/audits/RELEASE_READINESS.md) and [licensing status](LICENSING.md) before redistributing.
 
 ## What is included
 
@@ -15,8 +15,6 @@ Evidence-aware prompt engineering knowledge and a portable Agent Skill, with an 
 The skill requires no runtime dependency. The optional CLI requires Python 3.10+. See [installation](INSTALLATION.md), [commands](COMMANDS.md), [platform compatibility](COMPATIBILITY.md), and [agent instructions](INSTALL_FOR_AI_AGENTS.md).
 
 ## Quick use
-
-AI agents should start with the canonical [SKILL.md](src/upe/resources/skill/universal-prompt-engineering/SKILL.md), consult the [knowledge index](src/upe/resources/skill/universal-prompt-engineering/references/KNOWLEDGE_INDEX.md), and load only the references relevant to the current task.
 
 From a local checkout, install the isolated CLI with pipx:
 
@@ -53,7 +51,7 @@ Build and artifact checks are documented in [release readiness](docs/audits/RELE
 
 ## Public source
 
-The source is available in [Prompter-Silva on GitHub](https://github.com/pcdosilva01-spec/Prompt-Enginer), including the canonical [skill entrypoint](https://github.com/pcdosilva01-spec/Prompt-Enginer/blob/master/src/upe/resources/skill/universal-prompt-engineering/SKILL.md). The source commit does not constitute a package or GitHub Release.
+Previous source is available in [Prompter-Silva on GitHub](https://github.com/pcdosilva01-spec/Prompter-Silva), including the canonical [skill entrypoint](https://github.com/pcdosilva01-spec/Prompter-Silva/blob/main/src/upe/resources/skill/universal-prompt-engineering/SKILL.md). The source commit does not constitute a package or GitHub Release.
 
 ## License
 

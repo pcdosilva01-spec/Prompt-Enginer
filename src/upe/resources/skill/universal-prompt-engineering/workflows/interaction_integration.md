@@ -23,6 +23,14 @@ Envie um objeto JSON UTF-8 pelo stdin de `python scripts/interaction.py`. Use `{
 
 ## Modelo e evidência
 
+Ao classificar uma nova tarefa, inclua no `brief` o campo `editorial`. Exemplo para README brasileiro com comandos literais em um chat isolado:
+
+```json
+{"parts":[{"kind":"prose","language":"pt-BR"},{"kind":"literal","language":"und"}],"installed":false,"source_readable":false}
+```
+
+O host classifica o resultado pedido pelo usuário, registra idioma, público e registro no entendimento e confirma as capacidades **do destinatário**. Use `prose` para prosa humana e `literal` para material protegido, incluindo código ou JSON. Use a língua de saída solicitada. A ausência do campo preserva estados e integrações anteriores, que precisam aplicar a regra pelo fluxo conversacional. Depois do aceite, insira `result.instruction` de `build`, quando presente, no prompt a revisar. Delimite fora desse bloco quais partes são editáveis e quais fatos são imutáveis. O helper exige uma única instrução integral do modo aprovado, incluindo núcleo comum, e rejeita duplicações e outros modos completos. Com perfil explicitamente inativo, rejeita também cláusulas integrais da referência atual; só lê a referência se encontrar um prefixo conhecido. Citações literais integrais exigem revisão conversacional (não há análise semântica de citações); integrações legadas sem perfil continuam responsáveis pela regra manualmente. A classificação, compatibilidade e conflitos semânticos dependem do host; consulte [roteamento](skill_routing.md). Cabe ao revisor detectar contradições e verificar a fidelidade. A limitação portátil acompanha a entrega fora do artefato.
+
 O `brief` recebe `task`, `complexity` (`simple/moderate/complex`), `platform` (superfície exata), `tools`, `context`, `plan`, `quota` (`low/sufficient/unknown`), `budget`, `priority` (`quality/latency/cost/balanced`), `chosen_model`, `chosen_reasoning` (vazios se não escolhidos) e `external_access` booleano. Use texto explícito para desconhecidos.
 
 `catalog` é uma lista de candidatos da pesquisa autorizada, ordenada por adequação inicial. Cada candidato contém `model` (ID/versão), `platform`, `reasoning` (vazio sem parâmetro verificado), `availability` (`confirmed/unknown/unavailable`), `sufficient` e `economy` booleanos e `evidence`: lista de objetos com `source`, `url` HTTPS, `date` ISO, `claim` e `limits`. `confirmed` exige acesso conhecido na superfície/conta, não mera evidência de catálogo. O módulo valida presença e forma. O host fundamenta cada classificação e identifica dados desatualizados ou conflitantes. Sem opção suficiente confirmável, pode passar catálogo vazio e usar a recomendação condicional.

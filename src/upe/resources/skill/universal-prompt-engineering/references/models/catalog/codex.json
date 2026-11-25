@@ -1,0 +1,85 @@
+{
+  "publisher": "OpenAI",
+  "surface": "Codex",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "CLI interativo usa /model. Desktop, IDE e Work têm seletores e permissões próprios. Nenhuma assinatura individual foi inspecionada.",
+  "sources": {
+    "guide": {
+      "title": "Codex models",
+      "url": "https://developers.openai.com/codex/models/",
+      "edition": "linha GPT-6.2",
+      "claim": "Seleção por superfície e tarefa, janela configurável, custo relativo em créditos."
+    }
+  },
+  "models": [
+    {
+      "id": "gpt-6.2-astra",
+      "name": "GPT-6.2 Astra",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": 1000000,
+      "output": null,
+      "reasoning": "Usar o esforço exposto pelo seletor da sessão; começar no padrão.",
+      "features": [],
+      "pricing": null,
+      "guide": "Planejamento de alterações difíceis: especifique o que testar.",
+      "notes": "Até 1M configurável. Conferir config.toml e limite efetivo.",
+      "sources": [
+        "guide"
+      ]
+    },
+    {
+      "id": "gpt-6.2-sol",
+      "name": "GPT-6.2 Sol",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": 1000000,
+      "output": null,
+      "reasoning": "Usar o esforço exposto pelo seletor da sessão; começar no padrão.",
+      "features": [],
+      "pricing": null,
+      "guide": "Edição de código e texto: peça entrega concreta e verificável.",
+      "notes": "Até 1M configurável. Conferir config.toml e limite efetivo.",
+      "sources": [
+        "guide"
+      ]
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "name": "GPT-6.1 Terra",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": "Usar o esforço exposto pelo seletor da sessão; começar no padrão.",
+      "features": [],
+      "pricing": null,
+      "guide": "Revisão visual e escrita: forneça o artefato.",
+      "notes": "Verificar janela efetiva no host.",
+      "sources": [
+        "guide"
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": "Usar o esforço exposto pelo seletor da sessão; começar no padrão.",
+      "features": [],
+      "pricing": null,
+      "guide": "Tarefa curta e repetível: fixe o formato de saída.",
+      "notes": "Verificar janela efetiva no host.",
+      "sources": [
+        "guide"
+      ]
+    }
+  ]
+}

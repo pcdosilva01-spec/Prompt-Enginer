@@ -1,0 +1,69 @@
+{
+  "publisher": "xAI / SpaceXSI",
+  "surface": "xAI API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Acesso no aplicativo Grok e acesso de API são distintos. A cobrança regional pode diferir.",
+  "sources": {
+    "card": {
+      "title": "Grok 4.7",
+      "url": "https://docs.x.ai/developers/models/grok-4.7",
+      "edition": "4.7",
+      "claim": "Janela e capacidades da variante pública."
+    },
+    "release": {
+      "title": "Release Notes",
+      "url": "https://docs.x.ai/developers/release-notes",
+      "edition": "2026-09-21 e 2026-11-19",
+      "claim": "Lançamento, esforço e fim de serviço do modelo Build."
+    },
+    "price": {
+      "title": "API Pricing",
+      "url": "https://docs.x.ai/developers/pricing",
+      "edition": null,
+      "claim": "Limiar de contexto longo e tarifa global. Linha histórica Build ainda consta da tabela."
+    }
+  },
+  "models": [
+    {
+      "id": "grok-4.7",
+      "name": "Grok 4.7",
+      "status": "listed",
+      "released": "2026-09-21",
+      "modalities": "texto/imagem → texto",
+      "context": 500000,
+      "output": null,
+      "reasoning": "low, medium, high (padrão), xhigh",
+      "features": [
+        "image-input",
+        "cache"
+      ],
+      "pricing": "USD/1M entrada/cache/saída: 2/0.50/6 abaixo de 200k; 4/1/12 a partir de 200k. Endpoint US ×1,1.",
+      "guide": "Em agentes, preserve estado do Responses e limite ferramentas à tarefa.",
+      "notes": "Sem teto de saída separado documentado no release. Fast é uma oferta de Cursor/Grok Build.",
+      "sources": [
+        "card",
+        "price",
+        "release"
+      ]
+    },
+    {
+      "id": "grok-build-0.1",
+      "name": "Grok Build 0.1",
+      "status": "retired",
+      "released": null,
+      "modalities": null,
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Excluir da seleção automática na API.",
+      "notes": "A tabela de preços conserva a linha. O changelog datado encerra o serviço em 19/11.",
+      "sources": [
+        "price",
+        "release"
+      ]
+    }
+  ]
+}

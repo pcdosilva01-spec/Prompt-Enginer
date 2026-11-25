@@ -94,7 +94,8 @@ def _verify_txt(packet, prompt, artifact_root):
     return f"[Baixar prompt TXT]({link})"
 
 
-def render_delivery(packet, *, approval, reviewed, recommendation, optimize, artifact_root=None):
+def render_delivery(packet, *, approval, reviewed, recommendation, optimize, artifact_root=None,
+                    editorial_limit=""):
     if not isinstance(packet, dict) or not approval or packet.get("digest") != approval:
         raise GateError("Current approval is required")
     prompt = required_text(packet.get("prompt"), "Prompt")
@@ -148,7 +149,7 @@ def render_delivery(packet, *, approval, reviewed, recommendation, optimize, art
         f"**Pontos fracos:** {review['weaknesses']}\n\n"
         f"**Correções efetuadas:** {review['corrections']}\n\n"
         f"**Oportunidades restantes:** {review['opportunities']}",
-        "**Limitações:** " + " ".join(filter(None, (review["limitations"], file_limitation))),
+        "**Limitações:** " + " ".join(filter(None, (review["limitations"], file_limitation, editorial_limit))),
         OFFER,
     ))
     response = {"text": "\n\n".join(sections)}

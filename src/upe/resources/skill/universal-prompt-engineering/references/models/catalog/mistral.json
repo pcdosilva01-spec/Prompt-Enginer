@@ -1,0 +1,116 @@
+{
+  "publisher": "Mistral AI",
+  "surface": "Mistral API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "A unidade de faturamento do OCR precisa ser confirmada no endpoint de documentos antes de estimar custos.",
+  "sources": {
+    "large": {
+      "title": "Mistral Large 4",
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0",
+      "edition": "26.10",
+      "claim": "MoE híbrido, licença, janela, ferramentas e preço."
+    },
+    "compare": {
+      "title": "Compare models",
+      "url": "https://docs.mistral.ai/inference/model-selection",
+      "edition": "26.10 / 26.03",
+      "claim": "IDs, preços e finalidade das variantes."
+    },
+    "old": {
+      "title": "Mistral Large 3",
+      "url": "https://docs.mistral.ai/models/mistral-large-3-0",
+      "edition": "25.12",
+      "claim": "Depreciação, capacidades e licença da geração anterior."
+    },
+    "ocr": {
+      "title": "OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "edition": "4.1",
+      "claim": "ID de OCR, caixas de parágrafo e anotações estruturadas."
+    },
+    "limits": {
+      "title": "Known limitations",
+      "url": "https://docs.mistral.ai/resources/known-limitations",
+      "edition": null,
+      "claim": "Janela publicada do Small 4 e limites por organização."
+    }
+  },
+  "models": [
+    {
+      "id": "mistral-large-4-0",
+      "name": "Mistral Large 4 v26.10",
+      "status": "listed",
+      "released": null,
+      "modalities": "multimodal → texto",
+      "context": 1000000,
+      "output": null,
+      "reasoning": "Instruct e reasoning híbridos.",
+      "features": [
+        "tools",
+        "schema",
+        "cache"
+      ],
+      "pricing": "USD/1M entrada/cache/saída 0.70/0.07/2.10.",
+      "guide": "Para análise de documentos, cite página e confira a anotação com a origem.",
+      "notes": "MoE 1050B totais, 52B ativos. Pesos sob Mistral Ecosystem Open Weight License.",
+      "sources": [
+        "large",
+        "compare"
+      ]
+    },
+    {
+      "id": "mistral-small-2603",
+      "name": "Mistral Small 4 v26.03",
+      "status": "listed",
+      "released": null,
+      "modalities": null,
+      "context": 256000,
+      "output": null,
+      "reasoning": "Híbrido instruct/reasoning.",
+      "features": [],
+      "pricing": "USD/1M entrada/saída 0.15/0.60.",
+      "guide": "Teste instruções de extração com exemplos de borda antes de escalar.",
+      "sources": [
+        "compare",
+        "limits"
+      ]
+    },
+    {
+      "id": "mistral-large-2512",
+      "name": "Mistral Large 3 v25.12",
+      "status": "deprecated",
+      "released": null,
+      "modalities": null,
+      "context": 256000,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "tools",
+        "schema"
+      ],
+      "pricing": null,
+      "guide": "Manter para identificar dependências de implantações existentes.",
+      "notes": "Pesos Apache 2.0; depreciação refere-se ao catálogo do serviço.",
+      "sources": [
+        "old"
+      ]
+    },
+    {
+      "id": "mistral-ocr-4-1",
+      "name": "Mistral OCR 4.1",
+      "status": "listed",
+      "released": null,
+      "modalities": "documento → blocos e anotações",
+      "context": null,
+      "output": null,
+      "reasoning": null,
+      "features": [],
+      "pricing": null,
+      "guide": "Extraia estrutura e coordenadas; revise manualmente blocos com baixa confiança.",
+      "sources": [
+        "ocr"
+      ]
+    }
+  ]
+}

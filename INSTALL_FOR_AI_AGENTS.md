@@ -1,10 +1,8 @@
 # Instructions for AI coding agents
 
-This guide applies to the source candidate in the [GitHub repository](https://github.com/pcdosilva01-spec/Prompt-Enginer). Publication of source files does not prove host discovery, model behavior, or a packaged release.
+This guide applies to the local candidate and the earlier source in the [GitHub repository](https://github.com/pcdosilva01-spec/Prompter-Silva). Publication of source files does not prove host discovery, model behavior, or a packaged release.
 
 ## Purpose and source
-
-Start with the canonical [SKILL.md](src/upe/resources/skill/universal-prompt-engineering/SKILL.md), consult the [knowledge index](src/upe/resources/skill/universal-prompt-engineering/references/KNOWLEDGE_INDEX.md), and load only the references relevant to the task.
 
 Canonical skill: `src/upe/resources/skill/universal-prompt-engineering/`. It is a portable Agent Skills folder with `SKILL.md`, progressive references, workflows, templates, adapters, and deterministic helper tests. Read `README.md`, `COMPATIBILITY.md`, and `SECURITY.md` before recommending installation. For exact official support paths, follow the host's linked docs.
 
@@ -28,4 +26,4 @@ Only after approval and destination review, perform the same command without `--
 
 ## Publication and links
 
-The canonical source path is [`src/upe/resources/skill/universal-prompt-engineering/SKILL.md`](https://github.com/pcdosilva01-spec/Prompt-Enginer/blob/master/src/upe/resources/skill/universal-prompt-engineering/SKILL.md). Verify the current commit and host-specific discovery rules before sharing installation claims.
+The canonical source path is [`src/upe/resources/skill/universal-prompt-engineering/SKILL.md`](https://github.com/pcdosilva01-spec/Prompter-Silva/blob/main/src/upe/resources/skill/universal-prompt-engineering/SKILL.md). Verify the current commit and host-specific discovery rules before sharing installation claims.

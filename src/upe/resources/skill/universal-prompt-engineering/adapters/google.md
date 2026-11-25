@@ -1,5 +1,7 @@
 # Adaptador Google: Gemini CLI e Antigravity
 
+Confirme descoberta e consentimento no Gemini CLI. No app ou em AI Studio, confira separadamente o acesso que determina o [modo Humanizer](../references/writing/humanizer.md).
+
 Fontes primárias consultadas em 23/11/2026: [Gemini CLI creating skills](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/creating-skills.md), [Gemini CLI using skills](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/using-agent-skills.md), [Antigravity Agent Skills](https://antigravity.google/docs/skills).
 
 ## Gemini CLI

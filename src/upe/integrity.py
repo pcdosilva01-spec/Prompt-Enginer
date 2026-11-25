@@ -21,6 +21,8 @@ REQUIRED_FILES = (
     "references/COMPATIBILITY_MATRIX.md",
     "references/original_dossier/ORIGINALS_SHA256.json",
     "scripts/approval_gate.py",
+    "scripts/editorial.py", "scripts/model_catalog.py", "references/writing/humanizer.md",
+    "references/writing/HUMANIZER-LICENSE.txt", "workflows/skill_routing.md",
     "scripts/interaction.py",
     "scripts/delivery_contract.py",
     "scripts/model_selection.py",

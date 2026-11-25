@@ -1,4 +1,5 @@
 import copy
+from datetime import date
 import json
 import subprocess
 import sys
@@ -32,7 +33,7 @@ def fixture_candidate(name="fixture-1", **changes):
     return dict(model=name, platform="Codex", reasoning="high", availability="confirmed",
                 sufficient=True, economy=False, evidence=[dict(
                     source="Fixture oficial", url="https://example.test/models",
-                    date="2026-11-24", claim="Catálogo sintético", limits="Sem preços")]) | changes
+                    date=date.today().isoformat(), claim="Catálogo sintético", limits="Sem preços")]) | changes
 
 
 class InteractionTests(unittest.TestCase):

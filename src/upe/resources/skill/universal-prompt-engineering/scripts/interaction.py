@@ -10,6 +10,7 @@ import sys
 
 from approval_gate import ApprovalGate, GateError
 from delivery_contract import digest, render_delivery
+from editorial import PORTABLE_LIMIT, instruction, mode_for, validate_instruction
 from model_selection import format_recommendation, recommend, required_text
 
 
@@ -146,6 +147,11 @@ class Workflow:
         summary = required_text(summary, "Understanding summary")
         revision = self.gate.revision + 1
         lines = [f"**Resumo de entendimento · revisão {revision}**", summary]
+        mode = self._editorial_mode()
+        if mode:
+            label = {"installed": "skill instalada", "source": "leitura da revisão oficial",
+                     "portable": "núcleo portátil"}[mode]
+            lines.append(f"Humanizer na prosa PT-BR do destinatário ({label}).")
         if self.requirements:
             lines.append("**Requisitos obrigatórios**\n" +
                          "\n".join(f"- {text}" for text in self.requirements.values()))
@@ -182,11 +188,23 @@ class Workflow:
     def _on_cosmetic(self, note):
         required_text(note, "Justification for cosmetic change outside the approved content")
 
+    def _editorial_mode(self):
+        brief = self.recommendation["brief"]
+        return mode_for(brief["editorial"]) if "editorial" in brief else None
+
     def _on_build(self):
         self.phase = "construction"
+        mode = self._editorial_mode()
+        if mode:
+            return {"instruction": instruction(mode)}
 
     def _on_review(self, prompt):
         candidate = digest(required_text(prompt, "Complete prompt for review"))
+        mode = self._editorial_mode()
+        # Explicit profiles can be active or inactive. Legacy hosts without a
+        # profile must still enforce the editorial contract conversationally.
+        if "editorial" in self.recommendation["brief"]:
+            validate_instruction(mode, prompt)
         if candidate == self.previous:
             raise GateError("An unchanged prompt cannot be delivered as an optimization")
         self.ready_packet = ""
@@ -209,6 +227,7 @@ class Workflow:
     def _render(self, packet, artifact_root):
         return render_delivery(packet, approval=self.gate.approved_digest, reviewed=self.reviewed,
                                recommendation=self.recommendation, optimize=self.optimize,
+                               editorial_limit=PORTABLE_LIMIT if self._editorial_mode() == "portable" else "",
                                artifact_root=artifact_root)
 
     def _on_no_gain(self, reason):

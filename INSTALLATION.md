@@ -26,7 +26,7 @@ upe-skill install codex --scope project --project-dir "C:\work\my project" --dry
 
 ## Install the skill manually
 
-Extract the versioned `universal-prompt-engineering-skill-0.1.0a3.zip` for a standalone install. Verify its SHA-256 sidecar first. Inside the extracted skill directory, run `python scripts/verify_package.py`. This requires Python 3.10+.
+Extract the versioned `universal-prompt-engineering-skill-0.1.0a4.zip` for a standalone install. Verify its SHA-256 sidecar first. Inside the extracted skill directory, run `python scripts/verify_package.py`. This requires Python 3.10+.
 
 Copy the full `src/upe/resources/skill/universal-prompt-engineering/` directory into the user or project skills location documented by the target host. Keep the directory name and relative structure intact. For example, a Codex project install is:
 
@@ -38,4 +38,4 @@ Then verify discovery in the host and run a low-risk two-turn invocation. Check 
 
 ## Publication and release status
 
-Version `0.1.0a3` was prepared as a local candidate. The license choice and third-party rights review remain unresolved; see [release readiness](docs/audits/RELEASE_READINESS.md) before redistribution.
+Version `0.1.0a4` was prepared as a local candidate. The license choice and third-party rights review remain unresolved; see [release readiness](docs/audits/RELEASE_READINESS.md) before redistribution.

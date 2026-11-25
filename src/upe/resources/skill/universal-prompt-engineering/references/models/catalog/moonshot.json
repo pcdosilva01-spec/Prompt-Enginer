@@ -1,0 +1,36 @@
+{
+  "publisher": "Moonshot AI",
+  "surface": "Pesos Kimi",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "A ficha de pesos não comprova o contexto da implantação nem a tarifa de uma API.",
+  "sources": {
+    "card": {
+      "title": "Kimi-K3 model card",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3",
+      "edition": "K3",
+      "claim": "Pesos, modalidades, contexto e arquitetura divulgada."
+    }
+  },
+  "models": [
+    {
+      "id": "moonshotai/Kimi-K3",
+      "name": "Kimi K3",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto/imagem/vídeo → texto",
+      "context": 1048576,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "image-input"
+      ],
+      "pricing": null,
+      "guide": "Forneça a imagem ou vídeo como entrada do runtime e peça referências temporais.",
+      "notes": "MoE, 2.8T totais, 104B ativos, Kimi Delta Attention e Attention Residuals.",
+      "sources": [
+        "card"
+      ]
+    }
+  ]
+}

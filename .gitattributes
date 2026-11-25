@@ -1,3 +1,0 @@
-# Keep hash-verified bundle and dossier bytes stable across Git checkouts.
-/DOSSIER_ENGENHARIA_DE_PROMPTS/** -text
-/src/upe/resources/skill/universal-prompt-engineering/** -text

@@ -1,0 +1,44 @@
+{
+  "publisher": "Z.ai",
+  "surface": "Z.ai API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Confirmar base URL, plano, orçamento e esforço na superfície escolhida.",
+  "sources": {
+    "card": {
+      "title": "GLM-5.3",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "edition": "5.3",
+      "claim": "Model ID, protocolos, tools, JSON e exemplo com thinking."
+    },
+    "price": {
+      "title": "Pricing",
+      "url": "https://docs.z.ai/guides/overview/pricing",
+      "edition": null,
+      "claim": "Tarifas de inferência e leitura em cache."
+    }
+  },
+  "models": [
+    {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto → texto",
+      "context": 1000000,
+      "output": 128000,
+      "reasoning": "Sempre ativo, low/high/max (padrão max).",
+      "features": [
+        "tools",
+        "json",
+        "cache"
+      ],
+      "pricing": "USD/1M entrada/leitura cache/saída 1.40/0.26/4.40.",
+      "guide": "Especifique uma função e valide seus argumentos antes de autorizar a execução.",
+      "sources": [
+        "card",
+        "price"
+      ]
+    }
+  ]
+}

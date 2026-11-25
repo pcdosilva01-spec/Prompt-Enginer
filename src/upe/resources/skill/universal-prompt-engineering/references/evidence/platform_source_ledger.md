@@ -1,5 +1,7 @@
 # Ledger de fontes de plataforma desta versão
 
+O ledger E2 de cada modelo está na [ficha da superfície](../models/catalog.md). A [nota de integração Humanizer](../writing/humanizer.md) fixa origem, revisão e limites da compatibilidade. As datas dos hosts abaixo conservam a consulta histórica.
+
 **Acesso/verificação:** 23/11/2026. Se não há data de publicação explícita, a célula indica isso; a data desta consulta não é tratada como data editorial. O ledger do dossiê integral conserva E-01–E-34 e as fontes acadêmicas/modelos originais.
 
 | ID | Título / publisher | URL | Data editorial | Claim que sustenta | Limite |
@@ -21,3 +23,12 @@
 | S-15 | Roo Code Docs — Extension Shutdown / Roo Code Archive | https://roocodeinc.github.io/Roo-Code/ | página marca encerramento/atualização em 15/05/2026 | extensão encerrada em 15/05/2026 | forks/sucessores têm ciclo separado |
 
 Os links foram consultados diretamente ou abertos via busca oficial em 23/11/2026. Páginas mudam; antes de recomendar caminho, permissão, modelo ou disponibilidade, reabra a fonte e anote novo snapshot.
+
+## Complemento consultado em 25/11/2026
+
+| ID | Título / publisher | URL | Data editorial | Claim | Limite |
+|---|---|---|---|---|---|
+| S-16 | GPT-6 and other models in ChatGPT / OpenAI Help Center | https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt | página viva, data exata não indicada | GPT-6.2 no Chat onde o seletor atualizado oferece Instant e Thinking (Medium, High, Extra High conforme disponibilidade); Pro separado; Astra/Sol selecionáveis em Work e Codex | rollout, plano, workspace, cota e seletor individual exigem confirmação; não inferir ID de API do rótulo no Chat. |
+| S-17 | Using skills to accelerate OSS maintenance / OpenAI Developers | https://developers.openai.com/blog/skills-agents-sdk | publicação indexada em 2026; data completa não reconfirmada | metadados iniciais e SKILL.md/referências sob demanda; reforça carregamento seletivo | orientação de implementação, não teste de comportamento desta skill. |
+
+E2 documental, confiança alta para as distinções explícitas, não para disponibilidade individual. As 12 fichas de catálogo da árvore local já datavam de 25/11/2026 e foram preservadas; não se renovou artificialmente a data de evidências não reconsultadas.

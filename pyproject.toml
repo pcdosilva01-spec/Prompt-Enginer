@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "universal-prompt-engineering-cli"
-version = "0.1.0a3"
+version = "0.1.0a5"
 description = "Local installer and verifier for the Universal Prompt Engineering Agent Skill"
 readme = "README.md"
 requires-python = ">=3.10"

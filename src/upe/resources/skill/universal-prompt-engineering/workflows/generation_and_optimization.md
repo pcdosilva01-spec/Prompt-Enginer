@@ -1,5 +1,7 @@
 # Generation and optimization workflow
 
+After current approval, insert the applicable [Humanizer recipient instruction](../references/writing/humanizer.md) before review for human-facing Brazilian Portuguese. Compare names, numbers, modality, conditions and protected literals against the approved inputs.
+
 Enter only after approval of the current understanding summary.
 
 1. Re-read the approved requirements and applicable modules; do not broaden scope.

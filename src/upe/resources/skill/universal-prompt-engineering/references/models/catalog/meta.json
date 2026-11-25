@@ -1,0 +1,61 @@
+{
+  "publisher": "Meta",
+  "surface": "Pesos Llama",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "Janela da ficha não comprova memória disponível, desempenho de recuperação ou preço no host.",
+  "sources": {
+    "scout": {
+      "title": "Llama 4 Scout model card",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "edition": "2025-04-05",
+      "claim": "Modalidades, contexto, treinamento, parâmetros ativos e licença."
+    },
+    "maverick": {
+      "title": "Llama 4 Maverick model card",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "edition": "2025-04-05",
+      "claim": "Arquitetura, pesos de instrução e lançamento."
+    }
+  },
+  "models": [
+    {
+      "id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "name": "Llama 4 Scout Instruct",
+      "status": "listed",
+      "released": "2025-04-05",
+      "modalities": "texto/imagem → texto/código",
+      "context": 10000000,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "image-input"
+      ],
+      "pricing": "Pesos; custos de infraestrutura ou serving dependem do operador.",
+      "guide": "Use o chat template dos pesos e teste imagens no runtime escolhido.",
+      "notes": "MoE autorregressivo, fusão multimodal precoce, 17B ativos; 16 experts, 109B totais, ~40T tokens. Corte ago/2024; Llama 4 Community License.",
+      "sources": [
+        "scout"
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "name": "Llama 4 Maverick Instruct",
+      "status": "listed",
+      "released": "2025-04-05",
+      "modalities": "texto/imagem → texto/código",
+      "context": 1000000,
+      "output": null,
+      "reasoning": null,
+      "features": [
+        "image-input"
+      ],
+      "pricing": "Pesos; custos de infraestrutura ou serving dependem do operador.",
+      "guide": "Use o chat template dos pesos e teste imagens no runtime escolhido.",
+      "notes": "MoE autorregressivo, fusão multimodal precoce, 17B ativos; 128 experts, 400B totais, ~22T tokens. Corte ago/2024; Llama 4 Community License.",
+      "sources": [
+        "maverick"
+      ]
+    }
+  ]
+}

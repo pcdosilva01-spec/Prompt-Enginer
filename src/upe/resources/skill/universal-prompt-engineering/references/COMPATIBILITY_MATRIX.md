@@ -1,5 +1,13 @@
 # Compatibilidade e adaptação por host
 
+| Capacidade confirmada no destinatário | Humanizer para prosa PT-BR |
+|---|---|
+| Skill disponível nesta sessão | Solicitar a skill reconhecida pelo host. |
+| Checkout fixado legível ou rede autorizada e utilizável | Ler o SKILL.md e as referências da revisão indicada. |
+| Chat isolado, API sem recurso habilitado ou acesso desconhecido | Incluir o núcleo editorial no prompt. Informar a limitação fora dele. |
+
+A presença da UPE no computador do engenheiro não comprova a capacidade do destinatário. [Origem, licença e blocos por modo](writing/humanizer.md).
+
 **Verificação documental: 23/11/2026.** Compatibilidade do formato não é prova de instalação, ativação, comportamento ou equivalência. URL editorial ausente: “data da página não indicada; consulta em 23/11/2026”.
 
 | Host/superfície | Suporte/formato | Instalação | Descoberta/ativação | Referências | Ferramentas/permissões | Limite/adaptação e verificação |

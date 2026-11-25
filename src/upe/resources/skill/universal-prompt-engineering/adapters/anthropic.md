@@ -1,5 +1,7 @@
 # Adaptador Anthropic: Claude Code e Claude.ai
 
+Quando listado no Claude Code, /humanizar-natural-ptbr pode invocar a skill. Na Messages API, confira o recurso disponível e escolha o [modo de entrega](../references/writing/humanizer.md) cabível.
+
 Fonte primária verificada: [Claude Code skills](https://code.claude.com/docs/en/skills), aberta em 23/11/2026; data editorial não indicada.
 
 - **Claude Code local:** instale a pasta sob `.claude/skills/universal-prompt-engineering/` (projeto) ou `~/.claude/skills/universal-prompt-engineering/` (pessoal). Skills em added directories e repositórios seguem config/permission local. Verifique no menu `/` ou `/skills`.

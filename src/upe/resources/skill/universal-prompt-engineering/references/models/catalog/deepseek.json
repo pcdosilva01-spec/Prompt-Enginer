@@ -1,0 +1,75 @@
+{
+  "publisher": "DeepSeek",
+  "surface": "DeepSeek API",
+  "checked": "2026-11-25",
+  "level": "E2",
+  "limits": "JSON Output confirma JSON, não valida um schema arbitrário. Verificar serialização do histórico de ferramentas por endpoint.",
+  "sources": {
+    "price": {
+      "title": "Models & Pricing",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "edition": null,
+      "claim": "IDs, versões, limites, recursos e valores de pico."
+    },
+    "mode": {
+      "title": "Thinking Mode",
+      "url": "https://api-docs.deepseek.com/guides/thinking_mode",
+      "edition": null,
+      "claim": "Parâmetros conforme API e diferenças de sampling."
+    },
+    "card": {
+      "title": "DeepSeek-V4.1-Flash model card",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "edition": "V4.1 Flash",
+      "claim": "Arquitetura dos pesos e pós-treinamento; o controle dos pesos difere do endpoint."
+    }
+  },
+  "models": [
+    {
+      "id": "deepseek-flash",
+      "name": "DeepSeek-V4.1-Flash-1017",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto/imagem → texto",
+      "context": 1000000,
+      "output": 384000,
+      "reasoning": "OpenAI format: thinking enabled/disabled, reasoning_effort low/high/max; padrão high. Temperature sem efeito em thinking.",
+      "features": [
+        "tools",
+        "json",
+        "cache",
+        "image-input"
+      ],
+      "pricing": "USD/1M entrada miss/hit/saída (pico): 0.30/0.006/1.20. Metade fora do pico. Pico em dias úteis 01–04 e 06–10 UTC, exceto feriados públicos chineses.",
+      "guide": "Para entrada visual, forneça imagem e delimite a resposta.",
+      "notes": "Pesos: encoder/decoder causal, MoE e pós-treino SFT, RL e destilação on-policy. IDs antigos deepseek-v4-flash e deepseek-v4-flash-vision-exp roteiam à versão atual.",
+      "sources": [
+        "price",
+        "mode",
+        "card"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek-V4-Pro-0813",
+      "status": "listed",
+      "released": null,
+      "modalities": "texto → texto",
+      "context": 1000000,
+      "output": 384000,
+      "reasoning": "OpenAI format: thinking enabled/disabled, reasoning_effort low/high/max; padrão high. Temperature sem efeito em thinking.",
+      "features": [
+        "tools",
+        "json",
+        "cache"
+      ],
+      "pricing": "USD/1M entrada miss/hit/saída (pico): 1.32/0.044/3.96. Metade fora do pico. Pico em dias úteis 01–04 e 06–10 UTC, exceto feriados públicos chineses.",
+      "guide": "Use Pro para tarefa textual complexa após medir ganho sobre Flash.",
+      "notes": "FIM beta só sem thinking.",
+      "sources": [
+        "price",
+        "mode"
+      ]
+    }
+  ]
+}

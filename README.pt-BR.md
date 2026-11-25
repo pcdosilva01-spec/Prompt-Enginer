@@ -2,7 +2,7 @@
 
 Base de conhecimento sobre engenharia de prompts com evidências, uma Skill portátil no padrão Agent Skills e um instalador/verificador local opcional.
 
-**Estado:** `0.1.0a3` é o candidato atual de código-fonte. Instalação no host e comportamento do modelo exigem validação própria. Consulte [prontidão da versão](docs/audits/RELEASE_READINESS.md) e [situação da licença](LICENSING.md) antes de redistribuir.
+**Estado:** `0.1.0a5` é um candidato local com ZIP autocontido da skill e ZIP de fonte. Instalação no host e comportamento do modelo exigem validação própria. Consulte [prontidão da versão](docs/audits/RELEASE_READINESS.md) e [situação da licença](LICENSING.md) antes de redistribuir.
 
 ## Conteúdo
 
@@ -15,8 +15,6 @@ Base de conhecimento sobre engenharia de prompts com evidências, uma Skill port
 A Skill não exige dependência em tempo de execução. A CLI opcional requer Python 3.10+. Consulte [instalação](INSTALLATION.md), [comandos](COMMANDS.md), [compatibilidade](COMPATIBILITY.md) e [guia para agentes](INSTALL_FOR_AI_AGENTS.md).
 
 ## Uso rápido
-
-Agentes de IA devem começar pelo [SKILL.md](src/upe/resources/skill/universal-prompt-engineering/SKILL.md) canônico, consultar o [índice de conhecimento](src/upe/resources/skill/universal-prompt-engineering/references/KNOWLEDGE_INDEX.md) e carregar apenas as referências relevantes para a tarefa.
 
 Em um checkout local, instale a CLI isolada com pipx:
 
