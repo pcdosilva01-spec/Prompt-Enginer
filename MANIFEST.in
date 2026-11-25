@@ -1,0 +1,2 @@
+recursive-include src/upe/resources/skill/universal-prompt-engineering *
+include README.md README.pt-BR.md LICENSING.md CHANGELOG.md

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Universal Prompt Engineering"
+  short_description: "Evidence-backed prompt design and review"
+  default_prompt: "Use $universal-prompt-engineering to design or evaluate a prompt for my target model and task."
+policy:
+  allow_implicit_invocation: true
